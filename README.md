@@ -16,13 +16,15 @@ A posting geo-msg backend server
 
 ### Installing
 
+```
+gulp setup
+```
+
+NOTE: gulp setup will
 1. Create virtual env
 2. Install dev dependency node modules
 3. Install localstack for aws local server
 
-```
-gulp setup
-```
 
 ## Running the tests
 
