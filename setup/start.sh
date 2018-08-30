@@ -1,4 +1,9 @@
 #!/bin/sh
+WORKD=`[ -z "$1" ] && echo "../" || "$1"`
 
-. env/python2.7_env/bin/activate
+echo ${WORKD}
+
+cd ${WORKD} &&
+
+. env/python2.7_env/bin/activate &&
 localstack start
