@@ -1,6 +1,4 @@
 var assert = require('assert')
-const lambda_local = require('lambda-local');
-var dynamodb_local = require('dynamodb-local');
 var create_table = require('../src/create_table.js');
 
 describe('simpletest', function() {
