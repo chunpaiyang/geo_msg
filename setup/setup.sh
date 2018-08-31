@@ -10,6 +10,10 @@ NODE_ENV="env/node8.10_env"
 PYTHON_BIN=/usr/bin/python2.7
 PYTHON_ENV="env/python2.7_env"
 
+if [ -d "env" ]; then
+    exit 0
+fi
+
 mkdir -p env
 
 pip install nodeenv && \
